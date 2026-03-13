@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+*{
+    user-select: none;
+}
+.flex-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.flex-column{
+   display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column; 
+}
+#root{
+    height: 100vh;
+}
+.draw{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    margin-top: 5px;
+     box-shadow: 1px 4px 3px lightgray;
+}
+.draw:hover{
+    box-shadow: 1px 4px 3px rgb(139,139 ,139);
+    transition: ease 0.5s;
+} 
+.draw .drawH{
+   width:300px !important; 
+   margin-left: 15px;
+
+   }
+   .drawH2{
+    display: none;
+   }
+   .draw2{
+    display: none;
+   }
+   /* .drawP{
+   margin-left: 15px;
+   }  */
+@media (max-width: 768px) {
+   .draw{
+    width: 250px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+   }
+   .drawImg{
+    width: 40px;
+    height: 40px;
+   }
+   .drawH{
+    display: none;
+   }
+
+}
